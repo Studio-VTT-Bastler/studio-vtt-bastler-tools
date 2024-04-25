@@ -1,0 +1,19 @@
+{
+  "id": "studio-vtt-bastler-tools",
+  "title": "Studio VTT Bastler - Tools",
+  "version": "12.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Studio VTT Bastler",
+      "flags": {}
+    }
+  ],
+  "styles": [
+    "styles/dnd5e.css",
+    "styles/dsa5.css"
+  ]
+}

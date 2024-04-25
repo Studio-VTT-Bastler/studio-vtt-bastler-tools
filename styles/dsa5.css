@@ -1,0 +1,14 @@
+div.readaloud {
+	border: solid 1px; 
+	border-radius: 5px; 
+	padding: 2%; 
+	background: rgb(255, 255, 255, 0.6)
+}
+
+div.scenetitle {
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+	background: rgb(224, 224, 224, 0.6);
+	margin-bottom:2%; 
+	font-size: 110%
+}

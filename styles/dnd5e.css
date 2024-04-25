@@ -1,0 +1,11 @@
+div.boxbrown {
+  background-color: #a59773;
+  border: solid 1px;
+  padding: 1rem;
+}
+div.sceneintro {
+  background-color: #61616180;
+  border: solid 1px;
+  border-radius: 3px;
+  padding: 1rem;
+}
