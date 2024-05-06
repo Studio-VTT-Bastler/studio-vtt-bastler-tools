@@ -1,0 +1,8 @@
+{
+  "SVTTB": {
+    "SETTINGS": {
+      "activateName": "Activate custom styling",
+      "activateHint": "This enables the custom styling by Studio VTT Bastler. Changing this setting will reload the game to apply changes immediately."
+    }
+  }
+}

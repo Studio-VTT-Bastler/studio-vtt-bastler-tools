@@ -3,7 +3,7 @@
   "title": "Studio VTT Bastler - Tools",
   "version": "12.0.0",
   "compatibility": {
-    "minimum": "12",
+    "minimum": "11",
     "verified": "12"
   },
   "authors": [
@@ -12,8 +12,19 @@
       "flags": {}
     }
   ],
-  "styles": [
-    "styles/dnd5e.css",
-    "styles/dsa5.css"
+  "esmodules": [
+    "scripts/script.js"
+  ],
+  "languages": [
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
   ]
 }
