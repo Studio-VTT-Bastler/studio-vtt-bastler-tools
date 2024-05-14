@@ -1,7 +1,8 @@
 div.boxbrown {
   background-color: #a59773;
   border: solid 1px;
-  padding: 1rem;
+  border-radius: 3px;
+  padding: 0.5rem;
 }
 div.sceneintro {
   background-color: #61616180;
@@ -23,44 +24,43 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 
 /*Schriftart*/
 .ah5e-journal .av5e {
-	font-family: "LiberationSerif-Bold";
+  font-family: "LiberationSerif-Bold";
 }
 
 .ah5e-journal p.av5e {
-	font-size: 1rem;
+  font-size: 1rem;
 }
 
 .ah5e-journal div.av5e {
-	font-size: 1rem;
-	padding: 0.5rem;
-	margin: 0.1rem;
-	border-radius: 8px;
-	background-color: lightgrey;
-	border: solid;
-	border-color: grey;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.1rem;
+  border-radius: 8px;
+  background-color: lightgrey;
+  border: solid;
+  border-color: grey;
 }
 
 .ah5e-journal table.av5e {
-	font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .ah5e-journal div.av5e tr:first-child {
-	background-color: #008B8B;
-	color: white;
-	font-weight: bold;
+  background-color: #008b8b;
+  color: white;
+  font-weight: bold;
 }
 
 .ah5e-journal div.av5e .content-link {
-  	color: white;
-	background: #008B8B80 !important;
-	border-radius: 8px;
+  color: white;
+  background: #008b8b80 !important;
+  border-radius: 8px;
 }
 
 .ah5e-journal div.av5e section.secret {
-	background: #008B8B40 !important;
+  background: #008b8b40 !important;
 }
 
 .ah5e-journal div.av5e section.secret.revealed {
-	background: #008B8B10 !important;
+  background: #008b8b10 !important;
 }
-
