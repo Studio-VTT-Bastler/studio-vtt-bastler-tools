@@ -28,7 +28,7 @@
     }
   ],
   "manifest": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools/releases/latest/download/manifest.json",
-  "download": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools/releases/download/v12.0.0/studio-vtt-bastler-tools-12_0_0.zip",
+  "download": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools/releases/download/v12.0.1/studio-vtt-bastler-tools-12_0_0.zip",
   "url": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools",
   "readme": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools"
 }
