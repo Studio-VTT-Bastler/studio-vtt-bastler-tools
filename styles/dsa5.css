@@ -1,14 +1,19 @@
+/*CSS Klassen für DSA Module vom Studio VTT Bastler */
+
+/*Klasse für Vorlesetexte*/
 div.readaloud {
-	border: solid 1px; 
-	border-radius: 5px; 
-	padding: 2%; 
-	background: rgb(255, 255, 255, 0.6)
+		border-top: solid 2px;
+		border-bottom: solid 2px;
+		padding: 2%;
+		border-radius: 4%;
+		background: #bea5872e;
+}
+/*Klasse um fette schrift in Vorlesetexten noch größer zu machen*/
+div.readaloud p strong {
+	font-size: 1.2em;
 }
 
-div.scenetitle {
-	border-top: solid 2px;
-	border-bottom: solid 2px;
-	background: rgb(224, 224, 224, 0.6);
-	margin-bottom:2%; 
-	font-size: 110%
+/*Klasse um Scenetitles die mit der DSA5 Klasse chatpaperfield gesetzt werden erweitert werden*/
+div.chatpaperfield.scenetitle p {
+	font-size: 1.2em;
 }
