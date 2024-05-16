@@ -1,3 +1,5 @@
+import { functions } from "./prosemirrorButtons.js";
+
 Hooks.on("init", () => {
   game.settings.register("studio-vtt-bastler-tools", "activate-css", {
     name: game.i18n.localize(`SVTTB.SETTINGS.activateName`),
@@ -23,6 +25,9 @@ Hooks.on("ready", () => {
         '<link rel="stylesheet" type="text/css" href="modules/studio-vtt-bastler-tools/styles/dsa5.css">'
       );
       log("inserted custom dsa5 styles")
+
+      initProsemirrorDSA5()
+
       break;
     case "dnd5e":
       $("head").append(
@@ -35,6 +40,29 @@ Hooks.on("ready", () => {
       break;
   }
 });
+
+function initProsemirrorDSA5() {
+  Hooks.on("getProseMirrorMenuDropDowns", (proseMirrorMenu, dropdowns) => {
+
+    let options = {
+      prosemirror: proseMirrorMenu,
+    };
+
+    dropdowns.journalEnrichers = {
+      cssClass: "vttb-tools",
+      title: "VTTB Tools",
+      entries: [
+        {
+          action: "readaloud",
+          active: false,
+          group: 1,
+          title: "Read aloud",
+          cmd: functions.readaloud.bind(options),
+        },
+      ],
+    };
+  });
+}
 
 function log(...s) {
   console.log("SVTTB |", ...s)
