@@ -5,11 +5,13 @@
 
 /*Klasse für Vorlesetexte*/
 div.readaloud {
-		border-top: solid 2px;
-		border-bottom: solid 2px;
-		padding: 2%;
-		border-radius: 4%;
-		background: #bea5872e;
+    margin: 25px 0px;
+    padding: 40px 0px;
+    font-style: italic;
+	  background-image: url('../images/readaloud-top.webp'), url('../images/readaloud-bottom.webp');
+    background-position: top center, bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /*Klasse vor jeden Vorlesetext mit "Zum Vorlesen oder Nacherzählen:" beginnen zu lassen*/
@@ -21,8 +23,52 @@ div.readaloud::before {
 
 /*----------------------------------------------------------------*/
 /*Scenetitles*/
+div.scenetitle {
+  border-image: url('../images/scenetitle_v45.webp');
+  clear: both;
+  border-image-width: 24px;
+  border-image-slice: 70 fill;
+  margin: 25px 0px;
+  padding: 20px 20px 20px 30px;
+}
 
 /*Klasse um Scenetitles die mit der DSA5 Klasse chatpaperfield gesetzt werden erweitert werden*/
-div.chatpaperfield.scenetitle p {
+div.scenetitle p {
 	font-size: 1.2em;
 }
+
+/*----------------------------------------------------------------*/
+/*Alternative DSA Liste - Name der Klasse noch nicht final*/
+.dsalist2 {
+	list-style-type: none;	
+}
+.dsalist2 li{
+  width: 100%;
+  position: relative;
+}
+  
+.dsalist2 li::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  background-image: url('../images/dsalist2.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+  
+/*----------------------------------------------------------------*/
+/*Alternatives Maskfield - Name der Klasse noch nicht final*/
+.maskfield2 {
+  clear: both;
+  padding: 50px 30px 30px 30px;
+  margin: 34px 0px;
+  border-image: url('../images/maskfield_v45-2.webp');
+  border-image-width: 50px;
+  border-image-slice: 120 fill;
+}
+/*ist das nötig?*/
+.maskfield2 tr:first-child{background:none}
