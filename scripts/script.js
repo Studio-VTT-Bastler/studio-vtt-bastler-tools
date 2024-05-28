@@ -1,4 +1,4 @@
-import { functions } from "./prosemirrorButtons.js";
+import { initProsemirrorDSA5 } from "./prosemirrorButtons.js";
 
 Hooks.on("init", () => {
   game.settings.register("studio-vtt-bastler-tools", "activate-css", {
@@ -8,12 +8,13 @@ Hooks.on("init", () => {
     config: true,
     type: Boolean,
     default: true,
-    onChange: value => { // value is the new value of the setting
-      log("setting changed:", value)
-      debouncedReload()
+    onChange: (value) => {
+      // value is the new value of the setting
+      log("setting changed:", value);
+      debouncedReload();
     },
   });
-  log("registered settings")
+  log("registered settings");
 });
 
 Hooks.on("ready", () => {
@@ -24,16 +25,16 @@ Hooks.on("ready", () => {
       $("head").append(
         '<link rel="stylesheet" type="text/css" href="modules/studio-vtt-bastler-tools/styles/dsa5.css">'
       );
-      log("inserted custom dsa5 styles")
+      log("inserted custom dsa5 styles");
 
-      initProsemirrorDSA5()
+      initProsemirrorDSA5();
 
       break;
     case "dnd5e":
       $("head").append(
         '<link rel="stylesheet" type="text/css" href="modules/studio-vtt-bastler-tools/styles/dnd5e.css">'
       );
-      log("inserted custom dnd5e styles")
+      log("inserted custom dnd5e styles");
       break;
 
     default:
@@ -41,29 +42,6 @@ Hooks.on("ready", () => {
   }
 });
 
-function initProsemirrorDSA5() {
-  Hooks.on("getProseMirrorMenuDropDowns", (proseMirrorMenu, dropdowns) => {
-
-    let options = {
-      prosemirror: proseMirrorMenu,
-    };
-
-    dropdowns.journalEnrichers = {
-      cssClass: "vttb-tools",
-      title: "VTTB Tools",
-      entries: [
-        {
-          action: "readaloud",
-          active: false,
-          group: 1,
-          title: "Read aloud",
-          cmd: functions.readaloud.bind(options),
-        },
-      ],
-    };
-  });
-}
-
 function log(...s) {
-  console.log("SVTTB |", ...s)
+  console.log("SVTTB |", ...s);
 }
