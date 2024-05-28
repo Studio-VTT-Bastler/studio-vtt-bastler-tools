@@ -72,3 +72,23 @@ div.scenetitle p {
 }
 /*ist das nötig?*/
 .gmnotes tr:first-child{background:none}
+
+/*----------------------------------------------------------------*/
+/*Progressives Maskfield mit vektor Grafiken*/
+.gmnotes2 {
+	background: url(../images/maskfield_UL.svg) top left no-repeat, url(../images/maskfield_line.svg) 114px 19px no-repeat, url(../images/maskfield_center.svg) center top no-repeat, url(../images/maskfield_line.svg) calc(100% - 114px) 19px no-repeat, url(../images/maskfield_UR.svg) top right no-repeat, url(../images/maskfield_line.svg) 19px 114px no-repeat, url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat, url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat, url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat, url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
+	background-size: 114px 114px, calc(50% - 227px) 8px, 226px 59px, calc(50% - 227px) 8px, 114px 114px, 8px calc(100% - 227px), 8px calc(100% - 227px), 114px 114px, calc(100% - 227px) 8px, 114px 114px;
+	padding: 70px 50px 50px 50px;
+	box-sizing: border-box;
+	min-height: 228px;
+	min-width: 228px;
+}
+
+
+@media (max-width: 454px) {
+.gmnotes2 {
+		background: url(../images/maskfield_UL.svg) top left no-repeat, url(../images/maskfield_line.svg) 114px 19px no-repeat, url(../images/maskfield_UR.svg) top right no-repeat, url(../images/maskfield_line.svg) 19px 114px no-repeat, url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat, url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat, url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat, url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
+		background-size: 114px 114px, calc(100% - 227px) 8px, 114px 114px, 8px calc(100% - 227px), 8px calc(100% - 227px), 114px 114px, calc(100% - 227px) 8px, 114px 114px;
+	}
+}
+
