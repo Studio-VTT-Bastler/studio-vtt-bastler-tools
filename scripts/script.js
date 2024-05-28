@@ -42,6 +42,6 @@ Hooks.on("ready", () => {
   }
 });
 
-function log(...s) {
+export function log(...s) {
   console.log("SVTTB |", ...s);
 }

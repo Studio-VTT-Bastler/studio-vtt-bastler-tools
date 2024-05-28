@@ -1,6 +1,9 @@
+import { log } from "./script.js";
+
 export function initProsemirrorDSA5() {
   Hooks.on("getProseMirrorMenuDropDowns", (menu, items) => {
     const wrapIn = ProseMirror.commands.wrapIn;
+    log(menu)
     if ("format" in items) {
       items.format.entries.push({
         action: "svttb-styles",
@@ -39,6 +42,7 @@ export function initProsemirrorDSA5() {
               menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
                 attrs: { _preserve: { class: "dsalist" } },
               });
+              menu._toggleBlock(menu.schema.nodes.bullet_list, wrapIn)
               return true;
             },
           },
@@ -51,6 +55,7 @@ export function initProsemirrorDSA5() {
               menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
                 attrs: { _preserve: { class: "dsalist2" } },
               });
+              menu._toggleBlock(menu.schema.nodes.bullet_list, wrapIn)
               return true;
             },
           },
