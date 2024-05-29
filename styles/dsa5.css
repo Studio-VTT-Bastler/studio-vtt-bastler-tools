@@ -38,16 +38,16 @@ div.scenetitle p {
 }
 
 /*----------------------------------------------------------------*/
-/*Alternative DSA Liste - Name der Klasse noch nicht final*/
-.dsalist2 {
+/*Alternative DSA Liste*/
+.vttblist {
 	list-style-type: none;	
 }
-.dsalist2 li{
+.vttblist li{
   width: 100%;
   position: relative;
 }
   
-.dsalist2 li::before {
+.vttblist li::before {
   content: '';
   display: inline-block;
   height: 10px;
@@ -61,8 +61,8 @@ div.scenetitle p {
   }
   
 /*----------------------------------------------------------------*/
-/*Alternatives Maskfield - Name der Klasse noch nicht final*/
-.maskfield2 {
+/*Alternatives Maskfield*/
+.gmnotes {
   clear: both;
   padding: 50px 30px 30px 30px;
   margin: 34px 0px;
@@ -71,4 +71,4 @@ div.scenetitle p {
   border-image-slice: 120 fill;
 }
 /*ist das nötig?*/
-.maskfield2 tr:first-child{background:none}
+.gmnotes tr:first-child{background:none}
