@@ -47,13 +47,13 @@ export function initProsemirrorDSA5() {
             },
           },
           {
-            action: "dsalist2",
-            title: "Alt. DSA list",
+            action: "vttblist",
+            title: "VTTB List",
             node: menu.schema.nodes.div,
-            attrs: { class: "dsalist2" },
+            attrs: { class: "vttblist" },
             cmd: () => {
               menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
-                attrs: { _preserve: { class: "dsalist2" } },
+                attrs: { _preserve: { class: "vttblist" } },
               });
               menu._toggleBlock(menu.schema.nodes.bullet_list, wrapIn)
               return true;
@@ -72,13 +72,13 @@ export function initProsemirrorDSA5() {
             },
           },
           {
-            action: "maskfield2",
-            title: "Alt. Mask Field",
+            action: "gmnotes",
+            title: "GM Notes",
             node: menu.schema.nodes.div,
-            attrs: { class: "maskfield2" },
+            attrs: { class: "gmnotes" },
             cmd: () => {
               menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
-                attrs: { _preserve: { class: "maskfield2" } },
+                attrs: { _preserve: { class: "gmnotes" } },
               });
               return true;
             },
