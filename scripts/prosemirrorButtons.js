@@ -46,6 +46,19 @@ export function initProsemirrorDSA5() {
           },
         },
         {
+          action: "chatpaperfield",
+          title: "Chatpaper field",
+          node: menu.schema.nodes.div,
+          attrs: { class: "scenetitle" },
+          cmd: () => {
+            // use function ProseMirrorMenu._toggleBlock() to wrap whole Block in Node
+            menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
+              attrs: { _preserve: { class: "chatpaperfield" } },
+            });
+            return true;
+          },
+        },
+        {
           action: "dsalist",
           title: "DSA list",
           node: menu.schema.nodes.div,
