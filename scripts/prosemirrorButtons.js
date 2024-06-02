@@ -118,5 +118,7 @@ export function initProsemirrorDSA5() {
         },
       ],
     });
+
+    log("Added Prosemirror Buttons")
   });
 }
