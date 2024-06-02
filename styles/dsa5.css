@@ -1,30 +1,34 @@
-/*CSS Klassen für DSA Module vom Studio VTT Bastler */
+/* CSS Klassen für DSA Module vom Studio VTT Bastler */
 
 /*----------------------------------------------------------------*/
-/*Vorlesetexte*/
+/* #region Vorlesetexte */
 
-/*Klasse für Vorlesetexte*/
+/* Klasse für Vorlesetexte*/
 div.readaloud {
-    margin: 25px 0px;
-    padding: 40px 0px;
-    font-style: italic;
-	  background-image: url('../images/readaloud-top.webp'), url('../images/readaloud-bottom.webp');
-    background-position: top center, bottom center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+  margin: 25px 0px;
+  padding: 40px 0px;
+  font-style: italic;
+  background-image: url("../images/readaloud-top.webp"),
+    url("../images/readaloud-bottom.webp");
+  background-position: top center, bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-/*Klasse vor jeden Vorlesetext mit "Zum Vorlesen oder Nacherzählen:" beginnen zu lassen*/
+/* Klasse vor jeden Vorlesetext mit "Zum Vorlesen oder Nacherzählen:" beginnen zu lassen */
+/* TODO: Inject via Javascript to localize text */
 div.readaloud::before {
-	content: "Zum Vorlesen oder Nacherzählen:";
-	font-size: 1.2em;
-	font-weight: bold;
+  content: "Zum Vorlesen oder Nacherzählen:";
+  font-size: 1.2em;
+  font-weight: bold;
 }
+
+/* #endregion */
 
 /*----------------------------------------------------------------*/
-/*Scenetitles*/
+/* #region Scenetitles */
 div.scenetitle {
-  border-image: url('../images/scenetitle_v45.webp');
+  border-image: url("../images/scenetitle_v45.webp");
   clear: both;
   border-image-width: 24px;
   border-image-slice: 70 fill;
@@ -32,63 +36,87 @@ div.scenetitle {
   padding: 20px 20px 20px 30px;
 }
 
-/*Klasse um Scenetitles die mit der DSA5 Klasse chatpaperfield gesetzt werden erweitert werden*/
+/* Klasse um Scenetitles die mit der DSA5 Klasse chatpaperfield gesetzt werden erweitert werden */
 div.scenetitle p {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
+/* #endregion */
 
 /*----------------------------------------------------------------*/
-/*Alternative DSA Liste*/
+/* #region Alternative DSA Liste */
 .vttblist {
-	list-style-type: none;	
+  list-style-type: none;
 }
-.vttblist li{
+.vttblist li {
   width: 100%;
   position: relative;
 }
-  
+
 .vttblist li::before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 10px;
   width: 20px;
   position: absolute;
   left: -20px;
   top: 2px;
-  background-image: url('../images/dsalist2.webp');
+  background-image: url("../images/dsalist2.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  }
-  
+}
+/* #endregion */
+
 /*----------------------------------------------------------------*/
-/*Alternatives Maskfield*/
+/* #region Alternatives Maskfield */
 .gmnotes {
   clear: both;
   padding: 50px 30px 30px 30px;
   margin: 34px 0px;
-  border-image: url('../images/maskfield_v45-2.webp');
+  border-image: url("../images/maskfield_v45-2.webp");
   border-image-width: 50px;
   border-image-slice: 120 fill;
 }
 /*ist das nötig?*/
-.gmnotes tr:first-child{background:none}
+.gmnotes tr:first-child {
+  background: none;
+}
+/* #endregion */
 
 /*----------------------------------------------------------------*/
-/*Progressives Maskfield mit vektor Grafiken*/
+/* #region Progressives Maskfield mit vektor Grafiken */
 .gmnotes2 {
-	background: url(../images/maskfield_UL.svg) top left no-repeat, url(../images/maskfield_line.svg) 114px 19px no-repeat, url(../images/maskfield_center.svg) center top no-repeat, url(../images/maskfield_line.svg) calc(100% - 114px) 19px no-repeat, url(../images/maskfield_UR.svg) top right no-repeat, url(../images/maskfield_line.svg) 19px 114px no-repeat, url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat, url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat, url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat, url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
-	background-size: 114px 114px, calc(50% - 227px) 8px, 226px 59px, calc(50% - 227px) 8px, 114px 114px, 8px calc(100% - 227px), 8px calc(100% - 227px), 114px 114px, calc(100% - 227px) 8px, 114px 114px;
-	padding: 70px 50px 50px 50px;
-	box-sizing: border-box;
-	min-height: 228px;
-	min-width: 228px;
+  background: url(../images/maskfield_UL.svg) top left no-repeat,
+    url(../images/maskfield_line.svg) 114px 19px no-repeat,
+    url(../images/maskfield_center.svg) center top no-repeat,
+    url(../images/maskfield_line.svg) calc(100% - 114px) 19px no-repeat,
+    url(../images/maskfield_UR.svg) top right no-repeat,
+    url(../images/maskfield_line.svg) 19px 114px no-repeat,
+    url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat,
+    url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat,
+    url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat,
+    url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
+  background-size: 114px 114px, calc(50% - 227px) 8px, 226px 59px,
+    calc(50% - 227px) 8px, 114px 114px, 8px calc(100% - 227px),
+    8px calc(100% - 227px), 114px 114px, calc(100% - 227px) 8px, 114px 114px;
+  padding: 70px 50px 50px 50px;
+  box-sizing: border-box;
+  min-height: 228px;
+  min-width: 228px;
 }
-
 
 @media (max-width: 454px) {
-.gmnotes2 {
-		background: url(../images/maskfield_UL.svg) top left no-repeat, url(../images/maskfield_line.svg) 114px 19px no-repeat, url(../images/maskfield_UR.svg) top right no-repeat, url(../images/maskfield_line.svg) 19px 114px no-repeat, url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat, url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat, url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat, url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
-		background-size: 114px 114px, calc(100% - 227px) 8px, 114px 114px, 8px calc(100% - 227px), 8px calc(100% - 227px), 114px 114px, calc(100% - 227px) 8px, 114px 114px;
-	}
+  .gmnotes2 {
+    background: url(../images/maskfield_UL.svg) top left no-repeat,
+      url(../images/maskfield_line.svg) 114px 19px no-repeat,
+      url(../images/maskfield_UR.svg) top right no-repeat,
+      url(../images/maskfield_line.svg) 19px 114px no-repeat,
+      url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat,
+      url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat,
+      url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat,
+      url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
+    background-size: 114px 114px, calc(100% - 227px) 8px, 114px 114px,
+      8px calc(100% - 227px), 8px calc(100% - 227px), 114px 114px,
+      calc(100% - 227px) 8px, 114px 114px;
+  }
 }
-
+/* #endregion */
