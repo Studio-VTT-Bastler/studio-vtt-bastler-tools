@@ -67,24 +67,8 @@ div.scenetitle p {
 /* #endregion */
 
 /*----------------------------------------------------------------*/
-/* #region Alternatives Maskfield */
-.gmnotes {
-  clear: both;
-  padding: 50px 30px 30px 30px;
-  margin: 34px 0px;
-  border-image: url("../images/maskfield_v45-2.webp");
-  border-image-width: 50px;
-  border-image-slice: 120 fill;
-}
-/*ist das nötig?*/
-.gmnotes tr:first-child {
-  background: none;
-}
-/* #endregion */
-
-/*----------------------------------------------------------------*/
 /* #region Progressives Maskfield mit vektor Grafiken */
-.gmnotes2 {
+.gmnotes {
   background: url(../images/maskfield_UL.svg) top left no-repeat,
     url(../images/maskfield_line.svg) 114px 19px no-repeat,
     url(../images/maskfield_center.svg) center top no-repeat,
@@ -105,7 +89,7 @@ div.scenetitle p {
 }
 
 @media (max-width: 454px) {
-  .gmnotes2 {
+  .gmnotes {
     background: url(../images/maskfield_UL.svg) top left no-repeat,
       url(../images/maskfield_line.svg) 114px 19px no-repeat,
       url(../images/maskfield_UR.svg) top right no-repeat,
