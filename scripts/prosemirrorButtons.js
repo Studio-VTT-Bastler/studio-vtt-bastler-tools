@@ -8,7 +8,8 @@ export function initProsemirrorDSA5() {
   // is rendered, to give access to dropdown items
   Hooks.on("getProseMirrorMenuDropDowns", (menu, items) => {
     // retrieve foundry-function for wrapping prosemirror text in html nodes
-    const wrapIn = ProseMirror.commands.wrapIn;
+    const wrapIn = foundry.prosemirror.commands.wrapIn;
+    const wrapInList = foundry.prosemirror.list.wrapInList;
 
     // return if no format is in dropdown
     if (!("format" in items)) return;
@@ -59,22 +60,6 @@ export function initProsemirrorDSA5() {
           },
         },
         {
-          action: "dsalist",
-          title: "DSA list",
-          node: menu.schema.nodes.div,
-          attrs: { class: "dsalist" },
-          cmd: () => {
-            // use function ProseMirrorMenu._toggleBlock() to wrap whole Block in Node
-            menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
-              attrs: { _preserve: { class: "dsalist" } },
-            });
-            // use function ProseMirrorMenu._toggleBlock() to additionally wrap whole Block in Bullet List
-            // actually would be better to use function wrapInList(), but there is no access in scope
-            menu._toggleBlock(menu.schema.nodes.bullet_list, wrapIn);
-            return true;
-          },
-        },
-        {
           action: "vttblist",
           title: "VTTB List",
           node: menu.schema.nodes.div,
@@ -86,26 +71,13 @@ export function initProsemirrorDSA5() {
             });
             // use function ProseMirrorMenu._toggleBlock() to additionally wrap whole Block in Bullet List
             // actually would be better to use function wrapInList(), but there is no access in scope
-            menu._toggleBlock(menu.schema.nodes.bullet_list, wrapIn);
-            return true;
-          },
-        },
-        {
-          action: "maskfield",
-          title: "Mask Field",
-          node: menu.schema.nodes.div,
-          attrs: { class: "maskfield" },
-          cmd: () => {
-            // use function ProseMirrorMenu._toggleBlock() to wrap whole Block in Node
-            menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
-              attrs: { _preserve: { class: "maskfield" } },
-            });
+            menu._toggleBlock(menu.schema.nodes.bullet_list, wrapInList);
             return true;
           },
         },
         {
           action: "gmnotes",
-          title: "GM Notes",
+          title: "Mask Field",
           node: menu.schema.nodes.div,
           attrs: { class: "gmnotes" },
           cmd: () => {
@@ -116,9 +88,46 @@ export function initProsemirrorDSA5() {
             return true;
           },
         },
+
+        {
+          action: "dsa5-styles",
+          title: "DSA5 Styles",
+          // define child items of "DSA5 Styles"
+          children: [
+            {
+              action: "maskfield",
+              title: "Mask Field",
+              node: menu.schema.nodes.div,
+              attrs: { class: "maskfield" },
+              cmd: () => {
+                // use function ProseMirrorMenu._toggleBlock() to wrap whole Block in Node
+                menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
+                  attrs: { _preserve: { class: "maskfield" } },
+                });
+                return true;
+              },
+            },
+            {
+              action: "dsalist",
+              title: "DSA List",
+              node: menu.schema.nodes.div,
+              attrs: { class: "dsalist" },
+              cmd: () => {
+                // use function ProseMirrorMenu._toggleBlock() to wrap whole Block in Node
+                menu._toggleBlock(menu.schema.nodes.div, wrapIn, {
+                  attrs: { _preserve: { class: "dsalist" } },
+                });
+                // use function ProseMirrorMenu._toggleBlock() to additionally wrap whole Block in Bullet List
+                // actually would be better to use function wrapInList(), but there is no access in scope
+                menu._toggleBlock(menu.schema.nodes.bullet_list, wrapInList);
+                return true;
+              },
+            },
+          ],
+        },
       ],
     });
 
-    log("Added Prosemirror Buttons")
+    log("Added Prosemirror Buttons");
   });
 }

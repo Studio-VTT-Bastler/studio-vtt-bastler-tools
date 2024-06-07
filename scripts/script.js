@@ -13,7 +13,20 @@ Hooks.on("init", () => {
       // value is the new value of the setting
       log("setting changed:", value);
       // reloads and reinitializes world
-      debouncedReload();
+      foundry.utils.debouncedReload();
+    },
+  });
+  // activate by calling game.settings.set("studio-vtt-bastler-tools", "use-prosemirror-buttons", true)
+  game.settings.register("studio-vtt-bastler-tools", "use-prosemirror-buttons", {
+    scope: "world", // "client" => stored per client; "world" => editable by gm for everyone
+    config: false, // if true, setting is visible in settings dialog
+    type: Boolean,
+    default: false,
+    onChange: (value) => {
+      // value is the new value of the setting
+      log(`now${value ? " " : " not "}using prosemirror buttons`);
+      // reloads and reinitializes world
+      foundry.utils.debouncedReload();
     },
   });
 
@@ -35,7 +48,8 @@ Hooks.on("ready", () => {
       log("inserted custom dsa5 styles");
 
       // init ProseMirror Buttons
-      initProsemirrorDSA5();
+      if (game.settings.get("studio-vtt-bastler-tools", "use-prosemirror-buttons"))
+        initProsemirrorDSA5();
 
       break;
     case "dnd5e":
