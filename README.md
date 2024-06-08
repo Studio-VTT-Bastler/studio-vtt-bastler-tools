@@ -14,4 +14,11 @@ If you don't want to use the styling, you can deactivate it in the module settin
 
 ### Prosemirror Buttons
 We added buttons to the Prosemirror Editor. These Buttons add css classes to the selected text.  
+
+For now, these buttons are in beta and should not be used. To activate them anyway open the console via F12 and enter the following command. This should reload the Client and activate the ProseMirror buttons.
+
+```js
+game.settings.set("studio-vtt-bastler-tools", "use-prosemirror-buttons", true)
+```
+
 ![Prosemirror Buttons](images/readme_images/prosemirror_buttons.png)
