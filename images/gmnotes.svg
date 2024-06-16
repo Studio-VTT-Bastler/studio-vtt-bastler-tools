@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Artboard1" transform="matrix(0.416667,0,0,0.458716,-259.167,-185.78)">
+        <rect x="622" y="405" width="120" height="109" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="622" y="405" width="120" height="109"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1.44578,0,0,1.31325,-1313.9,-23.1205)">
+                <path d="M1380.5,326C1403.4,326 1422,344.596 1422,367.5C1422,390.404 1403.4,409 1380.5,409C1357.6,409 1339,390.404 1339,367.5C1339,344.596 1357.6,326 1380.5,326ZM1380.5,328C1358.7,328 1341,345.699 1341,367.5C1341,389.301 1358.7,407 1380.5,407C1402.3,407 1420,389.301 1420,367.5C1420,345.699 1402.3,328 1380.5,328Z" style="fill:rgb(8,6,5);"/>
+            </g>
+            <g transform="matrix(1.44578,0,0,1.31325,-1313.9,-23.1205)">
+                <circle cx="1380.5" cy="367.5" r="39.5" style="fill:rgb(89,186,71);"/>
+            </g>
+            <g transform="matrix(2.28571,0,0,2.95857,623.714,389.429)">
+                <path d="M33.9,20L36,20L36,34L15,34L15,20L17.1,20L17.1,16.611C17.1,13.194 20.864,10.421 25.5,10.421C30.136,10.421 33.9,13.194 33.9,16.611L33.9,20ZM20.25,20L30.75,20L30.75,17.053C30.75,14.613 28.398,12.632 25.5,12.632C22.602,12.632 20.25,14.613 20.25,17.053L20.25,20Z" style="fill:rgb(146,148,151);stroke:rgb(8,6,5);stroke-width:1.19px;"/>
+            </g>
+            <g transform="matrix(2.4,0,0,2.18,622,405)">
+                <path d="M23,29.235C22.386,28.686 22,27.888 22,27C22,25.344 23.344,24 25,24C26.656,24 28,25.344 28,27C28,27.888 27.614,28.686 27,29.235L27,33C27,33.552 26.552,34 26,34L24,34C23.448,34 23,33.552 23,33L23,29.235Z" style="fill:rgb(8,6,5);"/>
+            </g>
+        </g>
+    </g>
+</svg>

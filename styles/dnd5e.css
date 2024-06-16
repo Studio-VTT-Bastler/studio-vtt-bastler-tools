@@ -64,3 +64,114 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 .ah5e-journal div.av5e section.secret.revealed {
   background: #008b8b10 !important;
 }
+
+/* Styles für "Read Aloud", "GM Notes", "Treasure" und "Combat". Klassen können natürlich noch umbenannt werden.
+   Dies ist die erste Version … vielleicht noch Farben ändern und generell weniger bunt machen? */
+
+.readaloud {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #333;
+  background-color: rgba(80, 160, 255, 0.5);
+  position: relative;
+  margin-top: 40px;
+}
+
+.readaloud:not(.readaloud + .readaloud):before {
+  content: url("../images/readaloud.svg");
+  display:block;
+  height:40px;
+  width:40px;
+  top: -30px;
+  position: absolute;
+}
+
+.readaloud + .readaloud {
+  margin-top: 0; /* Remove margin between consecutive readaloud paragraphs */
+  border-top: none; /* Remove top border for consecutive readaloud paragraphs */
+}
+
+.readaloud:has(+ .readaloud) {
+  margin-bottom: 0;  /* Remove margin between consecutive readaloud paragraphs */
+  border-bottom: none; /* Remove bottom border for readaloud paragraphs followed by another readaloud */
+}
+
+.treasure {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #333;
+  background-color: rgba(235, 80, 254, 0.5);
+  position: relative;
+  margin-top: 40px;
+}
+
+.treasure:not(.treasure + .treasure):before {
+  content: url("../images/treasure.svg");
+  display:block;
+  height:40px;
+  width:40px;
+  top: -30px;
+  position: absolute;
+}
+
+.treasure + .treasure {
+  margin-top: 0; /* Remove margin between consecutive readaloud paragraphs */
+  border-top: none; /* Remove top border for consecutive readaloud paragraphs */
+}
+
+.treasure:has(+ .treasure) {
+  margin-bottom: 0;  /* Remove margin between consecutive readaloud paragraphs */
+  border-bottom: none; /* Remove bottom border for readaloud paragraphs followed by another readaloud */
+}
+
+.combat {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #333;
+  background-color: rgba(254, 80, 80, 0.5);
+  position: relative;
+  margin-top: 40px;
+}
+
+.combat:not(.combat + .combat):before {
+  content: url("../images/combat.svg");
+  display:block;
+  height:40px;
+  width:40px;
+  top: -30px;
+  position: absolute;
+}
+
+.combat + .combat {
+  margin-top: 0; /* Remove margin between consecutive readaloud paragraphs */
+  border-top: none; /* Remove top border for consecutive readaloud paragraphs */
+}
+
+.combat:has(+ .combat) {
+  margin-bottom: 0;  /* Remove margin between consecutive readaloud paragraphs */
+  border-bottom: none; /* Remove bottom border for readaloud paragraphs followed by another readaloud */
+}
+
+.gmnotes {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #333;
+  background-color: rgba(80, 254, 141, 0.5);
+  position: relative;
+  margin-top: 40px;
+}
+
+.gmnotes:not(.gmnotes + .gmnotes):before {
+  content: url("../images/gmnotes.svg");
+  display:block;
+  height:40px;
+  width:40px;
+  top: -30px;
+  position: absolute;
+}
+
+.gmnotes + .gmnotes {
+  margin-top: 0; /* Remove margin between consecutive readaloud paragraphs */
+  border-top: none; /* Remove top border for consecutive readaloud paragraphs */
+}
+
+.gmnotes:has(+ .gmnotes) {
+  margin-bottom: 0;  /* Remove margin between consecutive readaloud paragraphs */
+  border-bottom: none; /* Remove bottom border for readaloud paragraphs followed by another readaloud */
+}
