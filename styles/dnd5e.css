@@ -1,3 +1,12 @@
+/* Constants */
+:root {
+  --svttb-color-readaloud: rgba(67, 117, 178, 0.3);
+  --svttb-color-treasure: rgba(255, 217, 0, 0.3);
+  --svttb-color-combat: rgba(254, 80, 80, 0.3);
+  --svttb-color-gmnotes: rgba(99, 109, 102, 0.3);
+  --svttb-color-border: #333;
+}
+
 div.boxbrown {
   background-color: #a59773;
   border: solid 1px;
@@ -68,10 +77,17 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 /* Styles für "Read Aloud", "GM Notes", "Treasure" und "Combat". Klassen können natürlich noch umbenannt werden.
    Dies ist die erste Version … vielleicht noch Farben ändern und generell weniger bunt machen? */
 
+.readaloud,
+.combat,
+.gmnotes,
+.treasure {
+  border-radius: 10px;
+}
+
 .readaloud {
   padding: 10px 10px 10px 10px;
-  border: 1px solid #333;
-  background-color: rgba(80, 160, 255, 0.5);
+  border: 1px solid var(--svttb-color-border);
+  background-color: var(--svttb-color-readaloud);
   position: relative;
   margin-top: 40px;
 }
@@ -97,8 +113,8 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 
 .treasure {
   padding: 10px 10px 10px 10px;
-  border: 1px solid #333;
-  background-color: rgba(235, 80, 254, 0.5);
+  border: 1px solid var(--svttb-color-border);
+  background-color: var(--svttb-color-treasure);
   position: relative;
   margin-top: 40px;
 }
@@ -124,8 +140,8 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 
 .combat {
   padding: 10px 10px 10px 10px;
-  border: 1px solid #333;
-  background-color: rgba(254, 80, 80, 0.5);
+  border: 1px solid var(--svttb-color-border);
+  background-color: var(--svttb-color-combat);
   position: relative;
   margin-top: 40px;
 }
@@ -151,8 +167,8 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 
 .gmnotes {
   padding: 10px 10px 10px 10px;
-  border: 1px solid #333;
-  background-color: rgba(80, 254, 141, 0.5);
+  border: 1px solid var(--svttb-color-border);
+  background-color: var(--svttb-color-gmnotes);
   position: relative;
   margin-top: 40px;
 }

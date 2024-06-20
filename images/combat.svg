@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g id="Artboard1" transform="matrix(0.416667,0,0,0.458716,-259.167,-185.78)">
         <rect x="622" y="405" width="120" height="109" style="fill:none;"/>
         <clipPath id="_clip1">
@@ -11,7 +11,7 @@
                 <path d="M1380.5,326C1403.4,326 1422,344.596 1422,367.5C1422,390.404 1403.4,409 1380.5,409C1357.6,409 1339,390.404 1339,367.5C1339,344.596 1357.6,326 1380.5,326ZM1380.5,328C1358.7,328 1341,345.699 1341,367.5C1341,389.301 1358.7,407 1380.5,407C1402.3,407 1420,389.301 1420,367.5C1420,345.699 1402.3,328 1380.5,328Z" style="fill:rgb(8,6,5);"/>
             </g>
             <g transform="matrix(1.44578,0,0,1.31325,-1313.9,-23.1205)">
-                <circle cx="1380.5" cy="367.5" r="39.5" style="fill:rgb(237,28,36);"/>
+                <circle cx="1380.5" cy="367.5" r="39.5" style="fill:rgb(254, 80, 80);"/>
             </g>
             <g transform="matrix(2.4,0,0,2.18,622,405)">
                 <path d="M26,41C26.607,41.456 27,41.683 27,42.5C27,43.88 26.38,43 25,43C23.62,43 23,43.88 23,42.5C23,41.683 23.393,41.456 24,41L24,36L21,35.5C21,35.5 19.917,36.083 19.5,36C19.083,35.917 18.5,35.333 18.5,35C18.5,34.667 19.083,34.083 19.5,34C19.917,33.917 21,34.5 21,34.5L23.5,34L23,7L25,4.5L27,7L26.5,34L29,34.5C29,34.5 30.083,33.917 30.5,34C30.917,34.083 31.5,34.667 31.5,35C31.5,35.333 30.917,35.917 30.5,36C30.083,36.083 29,35.5 29,35.5L26,36L26,41Z" style="fill:white;"/>
