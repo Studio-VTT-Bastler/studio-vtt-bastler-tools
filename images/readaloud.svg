@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g id="Artboard1" transform="matrix(0.416667,0,0,0.458716,-259.167,-185.78)">
         <rect x="622" y="405" width="120" height="109" style="fill:none;"/>
         <clipPath id="_clip1">
@@ -12,7 +12,7 @@
                     <path d="M1380.5,326C1403.4,326 1422,344.596 1422,367.5C1422,390.404 1403.4,409 1380.5,409C1357.6,409 1339,390.404 1339,367.5C1339,344.596 1357.6,326 1380.5,326ZM1380.5,330C1359.8,330 1343,346.803 1343,367.5C1343,388.197 1359.8,405 1380.5,405C1401.2,405 1418,388.197 1418,367.5C1418,346.803 1401.2,330 1380.5,330Z" style="fill:rgb(8,6,5);"/>
                 </g>
                 <g transform="matrix(0.46988,0,0,0.46988,673.831,272.819)">
-                    <circle cx="1380.5" cy="367.5" r="39.5" style="fill:#55AAFF;"/>
+                    <circle cx="1380.5" cy="367.5" r="39.5" style="fill:rgb(67, 117, 178);"/>
                 </g>
                 <g transform="matrix(0.712398,0,0,0.548193,316.238,238.048)">
                     <path d="M1405.53,390L1401.62,390C1399.07,390 1397,387.311 1397,384L1397,372C1397,368.689 1399.07,366 1401.62,366L1423.38,366C1425.93,366 1428,368.689 1428,372L1428,384C1428,387.311 1425.93,390 1423.38,390L1409.41,390C1408.24,394.031 1405.57,397.103 1402.28,398.044C1403.75,395.99 1404.89,393.206 1405.53,390Z" style="fill:white;"/>
