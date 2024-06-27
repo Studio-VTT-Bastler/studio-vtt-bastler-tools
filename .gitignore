@@ -1,2 +1,5 @@
 #ignore invisible files
 .*
+
+#ignore release files
+releases/*
