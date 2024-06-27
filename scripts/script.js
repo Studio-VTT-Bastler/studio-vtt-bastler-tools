@@ -1,4 +1,4 @@
-import { initProsemirrorDSA5 } from "./prosemirrorButtons.js";
+import { initProsemirrorDND5E, initProsemirrorDSA5 } from "./prosemirrorButtons.js";
 import { log } from "./helpers.js";
 
 // "init" Hook gets called while initializing the world
@@ -116,6 +116,12 @@ Hooks.on("ready", () => {
         '<link rel="stylesheet" type="text/css" href="modules/studio-vtt-bastler-tools/styles/dnd5e.css">'
       );
       log("inserted custom dnd5e styles");
+
+      // init ProseMirror Buttons if enabled
+      if (
+        game.settings.get("studio-vtt-bastler-tools", "use-prosemirror-buttons")
+      )
+        initProsemirrorDND5E();
       break;
 
     default:
