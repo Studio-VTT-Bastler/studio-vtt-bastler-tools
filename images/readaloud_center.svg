@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 112 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-92,-34)">
-        <g id="Artboard2" transform="matrix(1,0,0,0.995286,-1.42109e-14,0.518486)">
+<svg width="100%" height="100%" viewBox="0 0 54 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-46,-18)">
+        <g id="Artboard2" transform="matrix(0.498246,0,0,0.488595,-7.0805e-15,0.254529)">
             <rect x="0" y="-0.521" width="285" height="110.521" style="fill:none;"/>
-            <g transform="matrix(1,0,0,1.00474,-0.5,-40.7104)">
-                <path d="M92.5,78L99,78C104,77.979 110.5,74.5 116,74.5C123.5,74.5 138,79.583 138,82C138,84.417 123.5,89.5 116.5,89.5C110.553,89.5 104,86 99,86.021L92.5,86L92.5,78ZM204.5,86L198,86C193,86.021 186.5,89.5 181,89.5C173.5,89.5 159,84.417 159,82C159,79.583 173.966,74.5 180.5,74.5C186.5,74.5 193,78 198,77.979L204.5,78L204.5,86ZM148.5,76.5C151.536,76.5 154,78.964 154,82C154,85.036 151.536,87.5 148.5,87.5C145.464,87.5 143,85.036 143,82C143,78.964 145.464,76.5 148.5,76.5Z" style="fill:rgb(189,164,131);"/>
+            <g transform="matrix(1.00352,0,0,1.02334,-1.50528,-38.8963)">
+                <path d="M93.5,77.5L99.5,77.5C104.5,77.479 111,73.5 116.5,73.5C124,73.5 137.5,79.083 137.5,81.5C137.5,83.917 123.5,89.5 116.5,89.5C110.553,89.5 104.5,85.479 99.5,85.5L93.5,85.5L93.5,77.5ZM147.5,75.5C150.811,75.5 153.5,78.189 153.5,81.5C153.5,84.811 150.811,87.5 147.5,87.5C144.189,87.5 141.5,84.811 141.5,81.5C141.5,78.189 144.189,75.5 147.5,75.5ZM201.5,77.5L201.5,85.5L195.5,85.5C190.5,85.479 184.447,89.5 178.5,89.5C171.5,89.5 157.5,83.917 157.5,81.5C157.5,79.083 171,73.5 178.5,73.5C184,73.5 190.5,77.479 195.5,77.5L201.5,77.5Z" style="fill:rgb(189,164,131);"/>
             </g>
         </g>
     </g>

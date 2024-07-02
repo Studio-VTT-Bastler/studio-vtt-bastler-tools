@@ -17,17 +17,18 @@
 
 /* Klasse für Vorlesetexte mit vektor Grafiken */
 .readaloud {
-  background: url(../images/readaloud_UL.svg) top left no-repeat, url(../images/readaloud_line.svg) 75px 38px no-repeat, url(../images/readaloud_center.svg) center 34px no-repeat, url(../images/readaloud_line.svg) calc(100% - 75px) 38px no-repeat, url(../images/readaloud_UR.svg) top right no-repeat, url(../images/readaloud_BL.svg) 0 calc(100% - 5px) no-repeat, url(../images/readaloud_line.svg) 75px calc(100% - 43px) no-repeat, url(../images/readaloud_center.svg) center calc(100% - 39px) no-repeat, url(../images/readaloud_line.svg) calc(100% - 75px) calc(100% - 43px) no-repeat, url(../images/readaloud_BR.svg) 100% calc(100% - 5px) no-repeat;
-  background-size: 75px 46px, calc(50% - 131px) 8px, 112px 16px, calc(50% - 131px) 8px, 75px 46px, 75px 46px, calc(50% - 131px) 8px, 112px 16px, calc(50% - 131px) 8px, 75px 46px;
-  padding: 70px 10px 70px 10px;
+  background: url(../images/readaloud_UL.svg) top left no-repeat, url(../images/readaloud_line.svg) 38px 20px no-repeat, url(../images/readaloud_center.svg) center 18px no-repeat, url(../images/readaloud_line.svg) calc(100% - 38px) 20px no-repeat, url(../images/readaloud_UR.svg) top right no-repeat, url(../images/readaloud_BL.svg) bottom left no-repeat, url(../images/readaloud_line.svg) 38px calc(100% - 20px) no-repeat, url(../images/readaloud_center.svg) center calc(100% - 18px) no-repeat, url(../images/readaloud_line.svg) calc(100% - 38px) calc(100% - 20px) no-repeat, url(../images/readaloud_BR.svg) bottom right no-repeat;
+  background-size: 38px 24px, calc(50% - 65px) 4px, 54px 8px, calc(50% - 65px) 4px, 38px 24px, 38px 24px, calc(50% - 65px) 4px, 54px 8px, calc(50% - 65px) 4px, 38px 24px;
+  padding: 34px 0;
   box-sizing: border-box;
-  min-width: 250px;
+  min-width: 135px;
+  margin: 20px 0;
 }
 
 /* Klasse vor jeden Vorlesetext mit "Zum Vorlesen oder Nacherzählen:" beginnen zu lassen */
 /* TODO: Inject via Javascript to localize text */
 .readaloud::before {
-  content: "Zum Vorlesen oder Nacherzählen:";
+  content: "Zum Vorlesen oder Nacherzählen: ";
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -77,38 +78,25 @@ div.scenetitle p {
 
 /*----------------------------------------------------------------*/
 /* #region Progressives Maskfield mit vektor Grafiken */
-.journal-sheet-container .gmnotes {
+.gmnotes {
   background: url(../images/maskfield_UL.svg) top left no-repeat,
-    url(../images/maskfield_line.svg) 114px 19px no-repeat,
+    url(../images/maskfield_line.svg) 57px 9px no-repeat,
     url(../images/maskfield_center.svg) center top no-repeat,
-    url(../images/maskfield_line.svg) calc(100% - 114px) 19px no-repeat,
+    url(../images/maskfield_line.svg) calc(100% - 57px) 9px no-repeat,
     url(../images/maskfield_UR.svg) top right no-repeat,
-    url(../images/maskfield_line.svg) 19px 114px no-repeat,
-    url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat,
-    url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat,
-    url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat,
-    url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
-  background-size: 114px 114px, calc(50% - 227px) 8px, 226px 59px,
-    calc(50% - 227px) 8px, 114px 114px, 8px calc(100% - 227px),
-    8px calc(100% - 227px), 114px 114px, calc(100% - 227px) 8px, 114px 114px;
-  padding: 70px 50px 40px 50px;
+    url(../images/maskfield_line.svg) 9px 57px no-repeat,
+    url(../images/maskfield_line.svg) calc(100% - 9px) 57px no-repeat,
+    url(../images/maskfield_BL.svg) 0 calc(100% - 2px) no-repeat,
+    url(../images/maskfield_line.svg) 57px calc(100% - 11px) no-repeat,
+    url(../images/maskfield_BR.svg) 100% calc(100% - 2px) no-repeat;
+  background-size: 57px 57px, calc(50% - 112px) 4px, 114px 29px,
+    calc(50% - 112px) 4px, 57px 57px, 4px calc(100% - 114px),
+    4px calc(100% - 114px), 57px 57px, calc(100% - 114px) 4px, 57px 57px;
+  padding: 35px 25px 25px 25px;
   box-sizing: border-box;
-  min-height: 228px;
-  min-width: 228px;
+  min-height: 114px;
+  min-width: 114px;
+  margin: 20px 0;
 }
 
-.gmnotes.narrow, .editor-content .gmnotes {
-  background: url(../images/maskfield_UL.svg) top left no-repeat,
-    url(../images/maskfield_line.svg) 114px 19px no-repeat,
-    url(../images/maskfield_UR.svg) top right no-repeat,
-    url(../images/maskfield_line.svg) 19px 114px no-repeat,
-    url(../images/maskfield_line.svg) calc(100% - 19px) 114px no-repeat,
-    url(../images/maskfield_BL.svg) 0 calc(100% - 5px) no-repeat,
-    url(../images/maskfield_line.svg) 114px calc(100% - 24px) no-repeat,
-    url(../images/maskfield_BR.svg) 100% calc(100% - 5px) no-repeat;
-  background-size: 114px 114px, calc(100% - 227px) 8px, 114px 114px,
-    8px calc(100% - 227px), 8px calc(100% - 227px), 114px 114px,
-    calc(100% - 227px) 8px, 114px 114px;
-  padding: 40px 50px 40px 50px;
-}
 /* #endregion */
