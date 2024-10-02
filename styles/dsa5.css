@@ -57,11 +57,6 @@ div.scenetitle {
   margin: 25px 0px;
   padding: 20px 20px 20px 30px;
 }
-
-/* Klasse um Scenetitles die mit der DSA5 Klasse chatpaperfield gesetzt werden erweitert werden */
-div.scenetitle p {
-  font-size: 1.2em;
-}
 /* #endregion */
 
 /*----------------------------------------------------------------*/
