@@ -1,4 +1,7 @@
-import { initProsemirrorDND5E, initProsemirrorDSA5 } from "./prosemirrorButtons.js";
+import {
+  initProsemirrorDND5E,
+  initProsemirrorDSA5,
+} from "./prosemirrorButtons.js";
 import { log } from "./helpers.js";
 
 // "init" Hook gets called while initializing the world
@@ -76,4 +79,14 @@ Hooks.on("ready", () => {
     default:
       break;
   }
+});
+
+Hooks.on("renderJournalSheet", async (_, html) => {
+  setTimeout(
+    () =>
+      html
+        .find(".readaloud")
+        .attr("readaloud-title", game.i18n.localize("SVTTB.JOURNAL.readaloud")),
+    100
+  );
 });

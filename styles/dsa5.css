@@ -39,8 +39,9 @@
 
 /* Klasse vor jeden Vorlesetext mit "Zum Vorlesen oder Nacherzählen:" beginnen zu lassen */
 /* TODO: Inject via Javascript to localize text */
-.readaloud::before {
-  content: "Zum Vorlesen oder Nacherzählen: ";
+.readaloud:before {
+  /* content: "Zum Vorlesen oder Nacherzählen: "; */
+  content: attr(readaloud-title);
   font-weight: bold;
 }
 
