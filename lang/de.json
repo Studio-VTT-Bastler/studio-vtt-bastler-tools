@@ -3,6 +3,9 @@
     "SETTINGS": {
       "activateName": "Aktiviere zusätzliche Text-Styles",
       "activateHint": "Diese Einstellung aktiviert die zusätzlichen Text-Styles von Studio VTT Bastler. Bei Änderung der Einstellung wird die Anwendung neu geladen, um die Änderung sofort anzuwenden."
+    },
+    "JOURNAL": {
+      "readaloud": "Zum Vorlesen oder Nacherzählen:"
     }
   }
 }

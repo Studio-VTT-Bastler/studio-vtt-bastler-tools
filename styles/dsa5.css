@@ -39,9 +39,9 @@
 
 /* Klasse vor jeden Vorlesetext mit "Zum Vorlesen oder Nacherzählen:" beginnen zu lassen */
 /* TODO: Inject via Javascript to localize text */
-.readaloud::before {
-  content: "Zum Vorlesen oder Nacherzählen: ";
-  font-size: 1.2em;
+.readaloud:before {
+  /* content: "Zum Vorlesen oder Nacherzählen: "; */
+  content: attr(readaloud-title);
   font-weight: bold;
 }
 
@@ -56,11 +56,6 @@ div.scenetitle {
   border-image-slice: 70 fill;
   margin: 25px 0px;
   padding: 20px 20px 20px 30px;
-}
-
-/* Klasse um Scenetitles die mit der DSA5 Klasse chatpaperfield gesetzt werden erweitert werden */
-div.scenetitle p {
-  font-size: 1.2em;
 }
 /* #endregion */
 
