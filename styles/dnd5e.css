@@ -93,7 +93,7 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 }
 
 .readaloud:not(.readaloud + .readaloud):before {
-  content: url("../images/readaloud.svg");
+  content: url("../images/icons/readaloud.svg");
   display:block;
   height:40px;
   width:40px;
@@ -120,7 +120,7 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 }
 
 .treasure:not(.treasure + .treasure):before {
-  content: url("../images/treasure.svg");
+  content: url("../images/icons/treasure.svg");
   display:block;
   height:40px;
   width:40px;
@@ -147,7 +147,7 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 }
 
 .combat:not(.combat + .combat):before {
-  content: url("../images/combat.svg");
+  content: url("../images/icons/combat.svg");
   display:block;
   height:40px;
   width:40px;
@@ -174,7 +174,7 @@ Da ich kein Freund davon bin, dass CSS von Foundry zu Überschreiben, arbeite ic
 }
 
 .gmnotes:not(.gmnotes + .gmnotes):before {
-  content: url("../images/gmnotes.svg");
+  content: url("../images/icons/gmnotes.svg");
   display:block;
   height:40px;
   width:40px;
