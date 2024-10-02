@@ -17,8 +17,20 @@
 
 /* Klasse für Vorlesetexte mit vektor Grafiken */
 .readaloud {
-  background: url(../images/readaloud_UL.svg) top left no-repeat, url(../images/readaloud_line.svg) 38px 20px no-repeat, url(../images/readaloud_center.svg) center 18px no-repeat, url(../images/readaloud_line.svg) calc(100% - 38px) 20px no-repeat, url(../images/readaloud_UR.svg) top right no-repeat, url(../images/readaloud_BL.svg) bottom left no-repeat, url(../images/readaloud_line.svg) 38px calc(100% - 20px) no-repeat, url(../images/readaloud_center.svg) center calc(100% - 18px) no-repeat, url(../images/readaloud_line.svg) calc(100% - 38px) calc(100% - 20px) no-repeat, url(../images/readaloud_BR.svg) bottom right no-repeat;
-  background-size: 38px 24px, calc(50% - 65px) 4px, 54px 8px, calc(50% - 65px) 4px, 38px 24px, 38px 24px, calc(50% - 65px) 4px, 54px 8px, calc(50% - 65px) 4px, 38px 24px;
+  background: url(../images/readaloud/UL.svg) top left no-repeat,
+    url(../images/readaloud/line.svg) 38px 20px no-repeat,
+    url(../images/readaloud/center.svg) center 18px no-repeat,
+    url(../images/readaloud/line.svg) calc(100% - 38px) 20px no-repeat,
+    url(../images/readaloud/UR.svg) top right no-repeat,
+    url(../images/readaloud/BL.svg) bottom left no-repeat,
+    url(../images/readaloud/line.svg) 38px calc(100% - 20px) no-repeat,
+    url(../images/readaloud/center.svg) center calc(100% - 18px) no-repeat,
+    url(../images/readaloud/line.svg) calc(100% - 38px) calc(100% - 20px)
+      no-repeat,
+    url(../images/readaloud/BR.svg) bottom right no-repeat;
+  background-size: 38px 24px, calc(50% - 65px) 4px, 54px 8px,
+    calc(50% - 65px) 4px, 38px 24px, 38px 24px, calc(50% - 65px) 4px, 54px 8px,
+    calc(50% - 65px) 4px, 38px 24px;
   padding: 34px 0;
   box-sizing: border-box;
   min-width: 135px;
@@ -70,7 +82,7 @@ div.scenetitle p {
   position: absolute;
   left: -20px;
   top: 2px;
-  background-image: url("../images/dsalist2.webp");
+  background-image: url("../images/icons/dsalist2.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -79,16 +91,16 @@ div.scenetitle p {
 /*----------------------------------------------------------------*/
 /* #region Progressives Maskfield mit vektor Grafiken */
 .gmnotes {
-  background: url(../images/maskfield_UL.svg) top left no-repeat,
-    url(../images/maskfield_line.svg) 57px 9px no-repeat,
-    url(../images/maskfield_center.svg) center top no-repeat,
-    url(../images/maskfield_line.svg) calc(100% - 57px) 9px no-repeat,
-    url(../images/maskfield_UR.svg) top right no-repeat,
-    url(../images/maskfield_line.svg) 9px 57px no-repeat,
-    url(../images/maskfield_line.svg) calc(100% - 9px) 57px no-repeat,
-    url(../images/maskfield_BL.svg) 0 calc(100% - 2px) no-repeat,
-    url(../images/maskfield_line.svg) 57px calc(100% - 11px) no-repeat,
-    url(../images/maskfield_BR.svg) 100% calc(100% - 2px) no-repeat;
+  background: url(../images/maskfield/UL.svg) top left no-repeat,
+    url(../images/maskfield/line.svg) 57px 9px no-repeat,
+    url(../images/maskfield/center.svg) center top no-repeat,
+    url(../images/maskfield/line.svg) calc(100% - 57px) 9px no-repeat,
+    url(../images/maskfield/UR.svg) top right no-repeat,
+    url(../images/maskfield/line.svg) 9px 57px no-repeat,
+    url(../images/maskfield/line.svg) calc(100% - 9px) 57px no-repeat,
+    url(../images/maskfield/BL.svg) 0 calc(100% - 2px) no-repeat,
+    url(../images/maskfield/line.svg) 57px calc(100% - 11px) no-repeat,
+    url(../images/maskfield/BR.svg) 100% calc(100% - 2px) no-repeat;
   background-size: 57px 57px, calc(50% - 112px) 4px, 114px 29px,
     calc(50% - 112px) 4px, 57px 57px, 4px calc(100% - 114px),
     4px calc(100% - 114px), 57px 57px, calc(100% - 114px) 4px, 57px 57px;
