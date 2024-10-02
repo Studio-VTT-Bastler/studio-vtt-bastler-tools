@@ -1,7 +1,7 @@
 {
   "id": "studio-vtt-bastler-tools",
   "title": "Studio VTT Bastler - Tools",
-  "version": "12.2.0",
+  "version": "#{VERSION}#",
   "compatibility": {
     "minimum": "11",
     "verified": "12"
@@ -27,8 +27,8 @@
       "path": "lang/en.json"
     }
   ],
-  "manifest": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools/releases/latest/download/manifest.json",
-  "download": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools/releases/download/v12.2.0/studio-vtt-bastler-tools-12_2_0.zip",
-  "url": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "url": "#{URL}#",
   "readme": "https://github.com/Studio-VTT-Bastler/studio-vtt-bastler-tools"
 }
