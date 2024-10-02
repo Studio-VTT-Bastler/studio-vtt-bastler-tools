@@ -73,6 +73,9 @@ div.scenetitle p {
   width: 100%;
   position: relative;
 }
+.vttblist li::marker {
+  content: none;
+}
 
 .vttblist li::before {
   content: "";
