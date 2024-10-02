@@ -41,7 +41,6 @@
 /* TODO: Inject via Javascript to localize text */
 .readaloud::before {
   content: "Zum Vorlesen oder Nacherzählen: ";
-  font-size: 1.2em;
   font-weight: bold;
 }
 
