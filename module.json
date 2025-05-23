@@ -3,8 +3,8 @@
   "title": "Studio VTT Bastler - Tools",
   "version": "#{VERSION}#",
   "compatibility": {
-    "minimum": "11",
-    "verified": "12"
+    "minimum": "12",
+    "verified": "13"
   },
   "authors": [
     {
