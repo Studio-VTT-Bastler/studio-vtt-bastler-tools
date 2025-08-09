@@ -3,7 +3,7 @@
   "title": "Studio VTT Bastler - Tools",
   "version": "#{VERSION}#",
   "compatibility": {
-    "minimum": "12",
+    "minimum": "13",
     "verified": "13"
   },
   "authors": [
@@ -13,7 +13,16 @@
     }
   ],
   "esmodules": [
-    "scripts/script.js"
+    "scripts/script.mjs"
+  ],
+  "includes": [
+    "./images/**",
+    "./lang/**",
+    "./scripts/**",
+    "./styles/**",
+    "./templates/**",
+    "./module.json",
+    "./README.md"
   ],
   "languages": [
     {

@@ -1,4 +1,4 @@
-import { log } from "./helpers.js";
+import { log } from "../../lib/helpers.js";
 
 /**
  * This Function initializes ProseMirror Buttons for the dsa5 system
